@@ -1,4 +1,4 @@
-/* ===== variables de color y tamaño ===== */
+
 :root {
   --color-naranja: #964407;
   --color-naranja-claro: #b65c21;
@@ -34,7 +34,7 @@
   --espacio-movil: 16px;
 }
 
-/* ===== reset basico ===== */
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -72,26 +72,26 @@ h1, h2, h3 {
   font-family: var(--fuente-serif);
 }
 
-/* ===== iconos de material symbols ===== */
+
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   display: inline-block;
   vertical-align: middle;
 }
 
-/* tamaños de iconos */
+
 .icono-grande { font-size: 1.875rem; }
 .icono-xl     { font-size: 2.5rem; }
 
-/* colores de iconos */
+
 .icono-naranja { color: var(--color-naranja); }
 .icono-gris    { color: var(--color-gris); }
 
-/* ===== clases de color de texto ===== */
+
 .titulo-naranja { color: var(--color-naranja); }
 .titulo-gris    { color: var(--color-gris); }
 
-/* ===== contenedor centrado ===== */
+
 .contenedor {
   max-width: var(--ancho-maximo);
   margin-inline: auto;
@@ -104,7 +104,7 @@ h1, h2, h3 {
   }
 }
 
-/* ===== encabezado y navegacion ===== */
+
 .encabezado {
   position: static;
   top: 0;
@@ -162,7 +162,7 @@ h1, h2, h3 {
   color: var(--color-naranja);
 }
 
-/* en pantallas chicas el nav se apila abajo del logo */
+
 @media (max-width: 768px) {
   .nav-contenedor {
     flex-wrap: wrap;
@@ -191,7 +191,7 @@ h1, h2, h3 {
   }
 }
 
-/* ===== contenido principal ===== */
+
 main {
   padding-top: 80px;
 }
@@ -202,7 +202,7 @@ main {
   }
 }
 
-/* ===== seccion portada (hero) ===== */
+
 .portada {
   position: relative;
   height: 600px;
@@ -273,7 +273,7 @@ main {
   }
 }
 
-/* ===== estilos comunes a todas las secciones ===== */
+
 section {
   padding-block: 80px;
 }
@@ -294,7 +294,7 @@ section {
   margin-bottom: 48px;
 }
 
-/* ===== seccion destinos principales ===== */
+
 .destinos {
   background-color: var(--color-fondo);
 }
@@ -351,7 +351,7 @@ section {
   line-height: 1.5;
 }
 
-/* puntitos de las paradas */
+
 .punto-parada {
   flex-shrink: 0;
   width: 8px;
@@ -373,7 +373,6 @@ section {
   color: var(--color-gris);
 }
 
-/* ===== seccion itinerario ===== */
 .itinerario {
   background-color: var(--color-superficie-muy-suave);
 }
@@ -420,7 +419,7 @@ section {
   border-bottom-color: rgba(100, 93, 87, 0.2);
 }
 
-/* linea de tiempo con pasos */
+
 .pasos {
   position: relative;
 }
@@ -435,7 +434,7 @@ section {
   padding-bottom: 0;
 }
 
-/* linea vertical que conecta los pasos */
+
 .paso:not(:last-child)::before {
   content: '';
   position: absolute;
@@ -447,7 +446,6 @@ section {
   z-index: 0;
 }
 
-/* circulo de cada paso */
 .circulo {
   position: absolute;
   left: 0;
@@ -490,7 +488,7 @@ section {
   margin-bottom: 2px;
 }
 
-/* titulo grande para paradas importantes */
+
 .paso-titulo-grande {
   font-family: var(--fuente-serif);
   font-size: 2rem;
@@ -508,7 +506,7 @@ section {
   color: var(--color-texto-suave);
 }
 
-/* ===== seccion estudiantes ===== */
+
 .estudiantes {
   background-color: var(--color-fondo);
 }
@@ -593,7 +591,7 @@ section {
   position: relative;
 }
 
-/* circulo decorativo detras de la imagen */
+
 .imagen-burbuja {
   position: absolute;
   top: -16px;
@@ -615,7 +613,7 @@ section {
   object-fit: cover;
 }
 
-/* ===== seccion mapa ===== */
+
 .seccion-mapa {
   background: var(--color-superficie-suave);
 }
@@ -640,7 +638,7 @@ section {
   transform: scale(1.05);
 }
 
-/* ===== seccion horarios ===== */
+
 .horarios {
   background: var(--color-fondo);
 }
@@ -692,7 +690,6 @@ tbody td {
   font-weight: 700;
 }
 
-/* etiqueta tipo badge */
 .etiqueta {
   display: inline-block;
   padding: 4px 12px;
@@ -717,7 +714,7 @@ tbody td {
   font-style: italic;
 }
 
-/* ===== seccion accesibilidad ===== */
+
 .accesibilidad {
   background: var(--color-naranja);
   color: #fff;
@@ -800,7 +797,7 @@ tbody td {
   opacity: 0.4;
 }
 
-/* ===== pie de pagina ===== */
+
 .pie-pagina {
   padding-block: 48px;
   background: var(--color-superficie-oscura);
