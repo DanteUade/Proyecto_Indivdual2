@@ -1,11 +1,390 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TransBsAs | Pergamino a Buenos Aires</title>
+
+  <!-- fuentes de google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&family=Manrope:wght@400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    Hello world
+
+  <!-- encabezado con navegacion -->
+  <header class="encabezado">
+    <div class="nav-contenedor">
+
+      <div class="nav-marca">
+        <img src="auto.png" alt="logo TransBsAs" />
+        <span class="marca-nombre">TransBsAs</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#itinerario">Itinerario</a>
+        <a href="#mapa">Mapa</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#accesibilidad">Accesibilidad</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- seccion principal (hero) -->
+    <section class="portada">
+      <div class="portada-fondo">
+        <div class="portada-overlay"></div>
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFhikNOYBUrN2xrXYXOZZ5Tl4-FMQ3gfxdWDncwy4HZjBGJdcyBjhtaJjOk9u3Szh0JiXFg75FzWmRI9ZEzeSoMeBtH4H8feC1tbBjRjuYF0k5_mZ-EzGzxbC5JjWJMuoxx1CJvBDhFLErbN5aqisOLZIGY6g8FjtERSfBILi9hUy6iG7Ps3pKgKe2kxFACkbmDhH4BGlXMFgLh7s1lTwZ576mWsSxWTDMx7ZIumnQucZ6lrjn035lfoMLgrGEY8ZHxbDzbYMxNaY7" alt="colectivo en ruta al amanecer" />
+      </div>
+      <div class="portada-texto">
+        <h1>Línea TransBsAs: Conectando Pergamino con tu Futuro</h1>
+        <p>Un servicio rápido, cómodo y seguro diseñado para estudiantes de Pergamino que cursan en las principales universidades de Buenos Aires. Viajá directo a Caballito y Almagro.</p>
+      </div>
+    </section>
+
+    <!-- puntos principales del recorrido -->
+    <section class="destinos">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Nuestros Puntos Estratégicos</h2>
+        <div class="grilla-destinos">
+
+          <div class="tarjeta tarjeta-ida">
+            <div class="tarjeta-encabezado">
+              <span class="material-symbols-outlined icono-naranja icono-grande">north_east</span>
+              <h3 class="titulo-naranja">Pergamino a Parque Rivadavia</h3>
+            </div>
+            <ul>
+              <li><span class="punto-parada"></span> Cruce de San Antonio de Areco</li>
+              <li><span class="punto-parada"></span> Puente Saavedra</li>
+              <li><span class="punto-parada"></span> Estación Villa Crespo</li>
+              <li class="parada-destacada-naranja"><span class="punto-parada punto-naranja"></span> Parque Rivadavia (Av. Rivadavia 4800)</li>
+            </ul>
+          </div>
+
+          <div class="tarjeta tarjeta-vuelta">
+            <div class="tarjeta-encabezado">
+              <span class="material-symbols-outlined icono-gris icono-grande">south_west</span>
+              <h3 class="titulo-gris">Parque Rivadavia a Pergamino</h3>
+            </div>
+            <ul>
+              <li class="parada-destacada-gris"><span class="punto-parada punto-gris"></span> Parque Rivadavia (Rivadavia y Acoyte)</li>
+              <li><span class="punto-parada"></span> Pacífico (Palermo)</li>
+              <li><span class="punto-parada"></span> Puente Saavedra / Areco</li>
+              <li><span class="punto-parada"></span> Terminal Pergamino</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- itinerario completo con todas las paradas -->
+    <section class="itinerario" id="itinerario">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Itinerario Detallado de Paradas</h2>
+        <div class="grilla-itinerario">
+
+          <!-- columna ida -->
+          <div class="tarjeta-itinerario">
+            <div class="itinerario-encabezado titulo-naranja">
+              <span class="material-symbols-outlined icono-grande">directions_bus</span>
+              IDA: Pergamino → Parque Rivadavia
+            </div>
+            <div class="pasos">
+
+              <div class="paso">
+                <div class="circulo circulo-lleno-naranja"></div>
+                <h4 class="paso-titulo-grande">Terminal de Ómnibus de Pergamino</h4>
+                <p>Origen - Salida Principal</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo circulo-tenue-naranja"></div>
+                <h4>Av. de Mayo y Bv. Rocha / Av. Colón</h4>
+                <p>Parada Secundaria Urbana</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo circulo-tenue-naranja"></div>
+                <h4>Cruce de Arrecifes - RN 8</h4>
+                <p>Parada de Ruta (Secundaria)</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo circulo-tenue-naranja"></div>
+                <h4>Cruce de Capitán Sarmiento - RN 8</h4>
+                <p>Parada de Ruta (Secundaria)</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo"></div>
+                <h4 class="titulo-naranja">Cruce de San Antonio de Areco</h4>
+                <p>RN 8 y RP 41 (Parada Importante)</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo circulo-tenue-naranja"></div>
+                <h4>Fábrica Ford / Centro de Transbordo Pacheco</h4>
+                <p>Conexión Norte (Secundaria)</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo"></div>
+                <h4 class="titulo-naranja">Puente Saavedra</h4>
+                <p>Av. Gral Paz y Cabildo (Conexión Subte D / Ciudad Universitaria)</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo"></div>
+                <h4 class="titulo-naranja">Estación Villa Crespo</h4>
+                <p>Av. J.B. Justo y Corrientes (Conexión Subte B / Tren San Martín)</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo circulo-tenue-naranja"></div>
+                <h4>Agronomía</h4>
+                <p>Av. San Martín y Nazarre (Facultad Agronomía/Veterinaria)</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo circulo-lleno-naranja"></div>
+                <h4 class="paso-titulo-grande">Parque Rivadavia</h4>
+                <p>Av. Rivadavia al 4800 (Destino Final - Subte A)</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- columna vuelta -->
+          <div class="tarjeta-itinerario">
+            <div class="itinerario-encabezado titulo-gris itinerario-encabezado-vuelta">
+              <span class="material-symbols-outlined icono-grande">keyboard_return</span>
+              VUELTA: Parque Rivadavia → Pergamino
+            </div>
+            <div class="pasos">
+
+              <div class="paso">
+                <div class="circulo circulo-lleno-gris"></div>
+                <h4 class="paso-titulo-grande paso-titulo-grande-gris">Parque Rivadavia</h4>
+                <p>Av. Rivadavia y Acoyte (Origen CABA)</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo circulo-tenue-gris"></div>
+                <h4>Agronomía</h4>
+                <p>Av. San Martín y Pampa (Parada Secundaria)</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo circulo-gris"></div>
+                <h4 class="titulo-gris">Pacífico</h4>
+                <p>Av. J.B. Justo y Santa Fe (Subte D / Tren San Martín)</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo circulo-gris"></div>
+                <h4 class="titulo-gris">Puente Saavedra</h4>
+                <p>Av. Gral Paz y Cabildo (Parada Importante)</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo circulo-gris"></div>
+                <h4 class="titulo-gris">Cruce de San Antonio de Areco</h4>
+                <p>RN 8 (Parada de Ruta Importante)</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo circulo-tenue-gris"></div>
+                <h4>Cruce de Capitán Sarmiento - RN 8</h4>
+                <p>Parada de Ruta (Secundaria)</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo circulo-tenue-gris"></div>
+                <h4>Cruce de Arrecifes - RN 8</h4>
+                <p>Parada de Ruta (Secundaria)</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo circulo-tenue-gris"></div>
+                <h4>Av. Pellegrini y Av. Rocha</h4>
+                <p>Ingreso Pergamino (Secundaria)</p>
+              </div>
+
+              <div class="paso">
+                <div class="circulo circulo-lleno-gris"></div>
+                <h4 class="paso-titulo-grande paso-titulo-grande-gris">Terminal de Ómnibus de Pergamino</h4>
+                <p>Final del Recorrido</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- beneficios para estudiantes -->
+    <section class="estudiantes">
+      <div class="contenedor">
+        <div class="estudiantes-interior">
+
+          <div class="estudiantes-texto">
+            <h2>Beneficios para los Estudiantes</h2>
+            <p>Sabemos que tu tiempo y comodidad son fundamentales. Por eso, reforzamos nuestra flota en los momentos clave de tu semana académica.</p>
+            <div class="grilla-beneficios">
+              <div class="beneficio beneficio-naranja">
+                <span class="material-symbols-outlined icono-naranja">calendar_month</span>
+                <h5>Lunes Mañana</h5>
+                <p>Frecuencias reforzadas hacia CABA para llegar a tu primera clase.</p>
+              </div>
+              <div class="beneficio beneficio-gris">
+                <span class="material-symbols-outlined icono-gris">weekend</span>
+                <h5>Viernes Tarde</h5>
+                <p>Más servicios hacia Pergamino para que disfrutes tu fin de semana.</p>
+              </div>
+              <div class="beneficio beneficio-neutro">
+                <span class="material-symbols-outlined">directions_subway</span>
+                <h5>Conectividad Total</h5>
+                <p>Acceso directo a las líneas de Subte A, B y D desde nuestras paradas.</p>
+              </div>
+              <div class="beneficio beneficio-neutro">
+                <span class="material-symbols-outlined">wifi</span>
+                <h5>Estudiá a bordo</h5>
+                <p>WiFi de alta velocidad y puertos USB en cada asiento.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="estudiantes-imagen">
+            <div class="imagen-burbuja"></div>
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtejHfLyiN6oNIUnHbP228Cwgrl8V1w0pv0AtdwGwrUrMI7lBbFuOht6tmN7YCGPQYY8Ykc9XlN0hf4fdq1vHTt3gSPh1LpVomMk3LXRQzrVIGD7TskQ5S_bQYBEiV3pgvV3bPepqev7L25g77cAyDW74XjyUh-wMYPiO_vYilGGCRfYTY-zXAy2_Rop3wJkdAdMsHjXPI4KdKtvFsjb2wCZbvjHLQ3xfnKTzFxCfJkxMEqFSXzZsYAhIzeUwtRnCJAT68d2NGPji3" alt="estudiantes universitarios colaborando en biblioteca" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- mapa del recorrido -->
+    <section class="seccion-mapa" id="mapa">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Mapa del Recorrido</h2>
+        <p class="subtitulo-seccion">Visualizá el trayecto y sus paradas</p>
+        <div class="mapa-contenedor">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOZSv8zvSFufD5xmVA4Lz5fjmbStMjCnnnRHKc6_8c44fACVcmbpWxK3XF_7nHu8zJSnXmMoufz8nMzPErlO8xBW37vxDxs_KGBgk7L_b20yrVKANaGKWRIocjvWv6fJ1ado2DaPh5iz7Uov1v4wyA3iu3Gbe6cmvDMd7yOyq6quNTJqeEEdhn4tgDjxMEkNF94NYN_kSQFaywyciNC3PaSgJkfCgOkFz7lsL_TDLkzHcW64GqdQ6wi05uFvro46KWYvlZ20sbGqd-sEo" alt="mapa del recorrido Pergamino - Buenos Aires por RN 8" />
+        </div>
+      </div>
+    </section>
+
+    <!-- tabla de horarios -->
+    <section class="horarios" id="horarios">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Horarios y Salidas</h2>
+        <div class="tabla-contenedor">
+          <table>
+            <thead>
+              <tr>
+                <th>Origen</th>
+                <th>Destino</th>
+                <th>Frecuencia</th>
+                <th>Primera Salida</th>
+                <th>Última Salida</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Pergamino</strong></td>
+                <td>Parque Rivadavia</td>
+                <td><span class="etiqueta">Cada 2hs</span></td>
+                <td>04:30 AM</td>
+                <td>20:30 PM</td>
+              </tr>
+              <tr>
+                <td><strong>Pque. Rivadavia</strong></td>
+                <td>Pergamino</td>
+                <td><span class="etiqueta">Cada 2hs</span></td>
+                <td>06:00 AM</td>
+                <td>22:00 PM</td>
+              </tr>
+              <tr class="fila-resaltada">
+                <td colspan="2">Refuerzo Estudiantil (Vie/Lun)</td>
+                <td><span class="etiqueta etiqueta-gris">Cada 45 min</span></td>
+                <td>---</td>
+                <td>---</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="nota-horario">* Los horarios pueden variar en feriados. Consultar disponibilidad en tiempo real vía app.</p>
+      </div>
+    </section>
+
+    <!-- seccion accesibilidad -->
+    <section class="accesibilidad" id="accesibilidad">
+      <div class="contenedor">
+        <div class="accesibilidad-interior">
+
+          <div class="accesibilidad-texto">
+            <div class="accesibilidad-encabezado">
+              <span class="material-symbols-outlined icono-xl">accessible</span>
+              <h2>Accesibilidad Sin Compromisos</h2>
+            </div>
+            <p>TransBsAs garantiza que todos los estudiantes tengan el mismo acceso a sus servicios. Nuestra flota está equipada con los más altos estándares internacionales de accesibilidad.</p>
+            <div class="lista-caracteristicas">
+              <div class="caracteristica">
+                <span class="material-symbols-outlined">check_circle</span>
+                <div>
+                  <h6>Rampas Automáticas</h6>
+                  <p>Sistemas hidráulicos de última generación para sillas de ruedas.</p>
+                </div>
+              </div>
+              <div class="caracteristica">
+                <span class="material-symbols-outlined">check_circle</span>
+                <div>
+                  <h6>Asientos Prioritarios</h6>
+                  <p>Ubicaciones reservadas con espacio extra y anclajes de seguridad.</p>
+                </div>
+              </div>
+              <div class="caracteristica">
+                <span class="material-symbols-outlined">check_circle</span>
+                <div>
+                  <h6>Información Sonora y Visual</h6>
+                  <p>Pantallas y anuncios audibles para cada parada del recorrido.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accesibilidad-imagen">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpWKnu7VW_raWZ4XBPuQeUWckba9Iy0FJ9cOWFsqFwbK0AO4PaNchVNHETNWva7n3dYjcVHg2eGJYVu8bQ-0oQIZn94K7HVXhOnTUrGqlEF3oeSkejCHNtaZz9afWnMscS88MzKg9zYpUEScqwd2N6uCnO-6BV0x-1LAL0wmBFO4LaYW5e4M6lh6RFoyqzEChRt49tQ_QcbEMctvVLBtXhgxyC8oxF5X07bzOrVL42_a-1bnu07hTf3de8hnsfQ7PpIgQeKtuvF_Rg" alt="rampa de accesibilidad en colectivo" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- pie de pagina -->
+  <footer class="pie-pagina">
+    <div class="contenedor">
+      <div class="pie-interior">
+        <div>
+          <p class="pie-nombre">Terminal de Omnibus Almagro</p>
+          <p>© 2026 Terminal de Omnibus Almagro. TransBsAs</p>
+        </div>
+        <nav class="pie-links">
+          <a href="#">Contactanos</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
