@@ -366,9 +366,7 @@ section {
 }
 
 
-/* ══════════════════════════════════════════════
-   NUEVA SECCIÓN: Flota
-══════════════════════════════════════════════ */
+
 .flota {
   background-color: var(--color-superficie-muy-suave);
 }
@@ -386,7 +384,6 @@ section {
   }
 }
 
-/* Imagen grande principal */
 .flota-principal {
   position: relative;
   border-radius: var(--borde-radio-xl);
@@ -420,7 +417,7 @@ section {
   gap: 8px;
 }
 
-/* Grilla de 3 detalles: 3 columnas iguales en desktop */
+
 .grilla-flota-detalles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -431,7 +428,7 @@ section {
   .grilla-flota-detalles {
     grid-template-columns: 1fr 1fr;
   }
-  /* La tercera tarjeta se centra sola en la segunda fila */
+
   .flota-detalle:last-child {
     grid-column: 1 / -1;
     max-width: calc(50% - 8px);
@@ -614,9 +611,7 @@ section {
 }
 
 
-/* ══════════════════════════════════════════════
-   NUEVA SECCIÓN: Fotos del Recorrido
-══════════════════════════════════════════════ */
+
 .recorrido-fotos {
   background-color: var(--color-fondo);
 }
@@ -628,12 +623,11 @@ section {
   gap: 16px;
 }
 
-/* Primera foto: ocupa columnas 1-2, fila 1 */
+
 .foto-punto-grande {
   grid-column: span 2;
 }
 
-/* Última foto: ocupa columnas 3-4, fila 2 */
 .foto-punto-grande-derecha {
   grid-column: span 2;
 }
@@ -674,7 +668,6 @@ section {
   object-fit: cover;
   display: block;
   transition: transform 0.5s ease;
-  /* Fallback color mientras no hay imagen */
   background-color: var(--color-superficie-oscura);
 }
 
@@ -682,7 +675,6 @@ section {
   transform: scale(1.05);
 }
 
-/* Overlay degradado en la parte inferior */
 .foto-punto-overlay {
   position: absolute;
   bottom: 0;
