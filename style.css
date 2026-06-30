@@ -420,30 +420,13 @@ section {
 
 .grilla-flota-detalles {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
-}
-
-@media (max-width: 900px) {
-  .grilla-flota-detalles {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .flota-detalle:last-child {
-    grid-column: 1 / -1;
-    max-width: calc(50% - 8px);
-    margin-inline: auto;
-  }
 }
 
 @media (max-width: 480px) {
   .grilla-flota-detalles {
     grid-template-columns: 1fr;
-  }
-  .flota-detalle:last-child {
-    grid-column: auto;
-    max-width: 100%;
-    margin-inline: 0;
   }
 }
 
@@ -465,7 +448,6 @@ section {
   width: 100%;
   height: 140px;
   object-fit: cover;
-  /* Fallback */
   background-color: var(--color-superficie-oscura);
 }
 
@@ -926,89 +908,6 @@ tbody td {
   font-weight: 600;
   color: var(--color-texto-suave);
   font-style: italic;
-}
-
-
-.accesibilidad {
-  background: var(--color-naranja);
-  color: #fff;
-}
-
-.accesibilidad-interior {
-  display: flex;
-  gap: 48px;
-  align-items: center;
-}
-
-@media (max-width: 768px) {
-  .accesibilidad-interior {
-    flex-direction: column;
-  }
-}
-
-.accesibilidad-texto {
-  flex: 1;
-}
-
-.accesibilidad-encabezado {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 24px;
-}
-
-.accesibilidad-encabezado h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 500;
-  color: #fff;
-}
-
-.accesibilidad-texto > p {
-  font-size: 1.125rem;
-  line-height: 1.6;
-  margin-bottom: 32px;
-  opacity: 0.9;
-}
-
-.lista-caracteristicas {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.caracteristica {
-  display: flex;
-  gap: 16px;
-}
-
-.caracteristica .material-symbols-outlined {
-  flex-shrink: 0;
-  color: var(--color-naranja-suave);
-  font-size: 1.5rem;
-}
-
-.caracteristica h6 {
-  font-weight: 700;
-  margin-bottom: 2px;
-}
-
-.caracteristica p {
-  font-size: 1rem;
-  opacity: 0.8;
-}
-
-.accesibilidad-imagen {
-  flex: 1;
-}
-
-.accesibilidad-imagen img {
-  border-radius: var(--borde-radio-2xl);
-  box-shadow: var(--sombra-grande);
-  width: 100%;
-  object-fit: cover;
-  filter: grayscale(1) brightness(1.25) contrast(0.75);
-  mix-blend-mode: screen;
-  opacity: 0.4;
 }
 
 
